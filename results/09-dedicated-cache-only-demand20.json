@@ -1,0 +1,48 @@
+{
+  "label": "09-dedicated-cache-only-demand20",
+  "args": {
+    "base_url": "http://localhost:8000",
+    "duration": 30,
+    "small_workers": 10,
+    "whale_workers": 8,
+    "whale_rps": 20.0,
+    "small_tenants": 300,
+    "label": "09-dedicated-cache-only-demand20"
+  },
+  "small_only": {
+    "small": {
+      "requests": 8736,
+      "rps": 291.2,
+      "errors": 0,
+      "p50_ms": 3.1,
+      "p95_ms": 7.3,
+      "p99_ms": 10.4
+    },
+    "whale": {
+      "requests": 0,
+      "rps": 0.0,
+      "errors": 0,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null
+    }
+  },
+  "with_whale": {
+    "small": {
+      "requests": 8624,
+      "rps": 287.5,
+      "errors": 0,
+      "p50_ms": 3.3,
+      "p95_ms": 8.4,
+      "p99_ms": 12.5
+    },
+    "whale": {
+      "requests": 600,
+      "rps": 20.0,
+      "errors": 0,
+      "p50_ms": 6.8,
+      "p95_ms": 14.2,
+      "p99_ms": 71.8
+    }
+  }
+}

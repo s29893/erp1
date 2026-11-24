@@ -1,0 +1,48 @@
+{
+  "label": "07-dedicated-before-demand20",
+  "args": {
+    "base_url": "http://localhost:8000",
+    "duration": 30,
+    "small_workers": 10,
+    "whale_workers": 8,
+    "whale_rps": 20.0,
+    "small_tenants": 300,
+    "label": "07-dedicated-before-demand20"
+  },
+  "small_only": {
+    "small": {
+      "requests": 8839,
+      "rps": 294.6,
+      "errors": 0,
+      "p50_ms": 3.1,
+      "p95_ms": 6.9,
+      "p99_ms": 9.8
+    },
+    "whale": {
+      "requests": 0,
+      "rps": 0.0,
+      "errors": 0,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null
+    }
+  },
+  "with_whale": {
+    "small": {
+      "requests": 6174,
+      "rps": 205.8,
+      "errors": 0,
+      "p50_ms": 9.1,
+      "p95_ms": 54.1,
+      "p99_ms": 85.4
+    },
+    "whale": {
+      "requests": 600,
+      "rps": 20.0,
+      "errors": 0,
+      "p50_ms": 316.0,
+      "p95_ms": 363.0,
+      "p99_ms": 378.3
+    }
+  }
+}

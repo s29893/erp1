@@ -1,0 +1,48 @@
+{
+  "label": "06-dedicated-after-ops40",
+  "args": {
+    "base_url": "http://localhost:8000",
+    "duration": 30,
+    "small_workers": 10,
+    "whale_workers": 40,
+    "whale_rps": 0,
+    "small_tenants": 300,
+    "label": "06-dedicated-after-ops40"
+  },
+  "small_only": {
+    "small": {
+      "requests": 8790,
+      "rps": 293.0,
+      "errors": 0,
+      "p50_ms": 3.0,
+      "p95_ms": 6.5,
+      "p99_ms": 9.3
+    },
+    "whale": {
+      "requests": 0,
+      "rps": 0.0,
+      "errors": 0,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null
+    }
+  },
+  "with_whale": {
+    "small": {
+      "requests": 8641,
+      "rps": 288.0,
+      "errors": 0,
+      "p50_ms": 3.5,
+      "p95_ms": 8.4,
+      "p99_ms": 12.2
+    },
+    "whale": {
+      "requests": 640,
+      "rps": 21.3,
+      "errors": 0,
+      "p50_ms": 2000.0,
+      "p95_ms": 2001.8,
+      "p99_ms": 2004.4
+    }
+  }
+}

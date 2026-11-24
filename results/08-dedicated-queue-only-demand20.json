@@ -1,0 +1,48 @@
+{
+  "label": "08-dedicated-queue-only-demand20",
+  "args": {
+    "base_url": "http://localhost:8000",
+    "duration": 30,
+    "small_workers": 10,
+    "whale_workers": 8,
+    "whale_rps": 20.0,
+    "small_tenants": 300,
+    "label": "08-dedicated-queue-only-demand20"
+  },
+  "small_only": {
+    "small": {
+      "requests": 8717,
+      "rps": 290.6,
+      "errors": 0,
+      "p50_ms": 3.1,
+      "p95_ms": 7.2,
+      "p99_ms": 10.9
+    },
+    "whale": {
+      "requests": 0,
+      "rps": 0.0,
+      "errors": 0,
+      "p50_ms": null,
+      "p95_ms": null,
+      "p99_ms": null
+    }
+  },
+  "with_whale": {
+    "small": {
+      "requests": 7838,
+      "rps": 261.3,
+      "errors": 0,
+      "p50_ms": 5.5,
+      "p95_ms": 16.6,
+      "p99_ms": 25.0
+    },
+    "whale": {
+      "requests": 600,
+      "rps": 20.0,
+      "errors": 0,
+      "p50_ms": 293.5,
+      "p95_ms": 426.3,
+      "p99_ms": 458.3
+    }
+  }
+}
